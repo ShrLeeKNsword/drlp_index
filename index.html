@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="LP,游轮,弹丸论破,danganronpa,同人,游戏,avg">
+	<meta name="description" content="弹丸论破LP网站">
+	<title>弹丸论破LP</title>
+	<script src="js/vue.js" type="text/javascript" charset="UTF-8"></script>
+	<link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.compat.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script src="https://kit.fontawesome.com/6861b7b8a4.js" crossorigin="anonymous"></script>
+	<link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+	<!--info>这里插一句广告应该没人看见吧……欢迎访问</!-->
+
+	<div id="vm" style='padding-left: 20px;padding-right: 20px;background-color: #8ca6c7;'>
+		<br>
+		<div>
+			<div class="demo-image__placeholder">
+				<div class="block">
+					<el-image :src="top_img_scr" class='is-always-shadow'>
+						<div slot="placeholder" class="image-slot">
+							加载中<span class="dot">...</span>
+						</div>
+					</el-image>
+				</div>
+			</div>
+		</div>
+		<div>
+			<template>
+
+				<el-divider content-position="left">开始游戏 (版本{{ver_num}})</el-divider>
+
+				<!--info>这里快速开始游戏</!-->
+
+				<el-card class="box-card">
+					<div slot="header" class="clearfix">
+						<span>游戏条约</span>
+					</div>
+
+					<div class="text item">
+
+						<el-row>
+							<el-col :span="20">
+
+								<span>点击可以查看本游戏的游戏条例</span>
+
+							</el-col>
+							<el-col :span="4">
+
+								<el-divider direction="vertical"></el-divider>
+								<el-button type="primary" plain @click="dialogVisible = true">游戏条约</el-button>
+
+								<el-dialog title="游戏条约" :visible.sync="dialogVisible" width="80%"
+									:before-close="handleClose">
+									<span></span>
+									<span slot="footer" class="dialog-footer">
+											<el-button @click="dialogVisible = false">取 消</el-button>
+											<el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+										
+										</span>
+
+								</el-dialog>
+
+							</el-col>
+						</el-row>
+
+					</div>
+				</el-card>
+				<br>
+				<el-card class="box-card">
+					<div slot="header" class="clearfix">
+						<span>下载安装</span>
+					</div>
+
+					<div class="text item">
+
+						<el-row>
+							<el-col :span="20">
+
+								<span>支持系统<strong>[请到具体页面查看]</strong>请按照安装程序指示完成安装</span>
+
+							</el-col>
+							<el-col :span="4">
+
+								<el-divider direction="vertical"></el-divider>
+								<a href="https://www.baidu.com">
+									<el-button type="primary" plain>暂无下载</el-button>
+								</a>
+
+							</el-col>
+						</el-row>
+
+					</div>
+				</el-card>
+
+				<el-divider content-position="left">游戏介绍</el-divider>
+
+				<!--info>这里开始游戏介绍</!-->
+
+				<div class="text item">
+					<el-card class="box-card">
+						<div slot="header" class="clearfix">
+							<span>公告</span>
+						</div>
+
+						<div class="text item">
+
+							<el-row>
+								<el-col :span="10">
+
+									<span>
+											<template>
+												<div class="demo-image__placeholder">
+													<div class="block">
+														<el-image :src="hot_img_scr">
+															<div slot="placeholder" class="image-slot">
+																加载中<span class="dot">...</span>
+						</div>
+						</el-image>
+				</div>
+		</div>
+		</template>
+		</span>
+
+		</el-col>
+		<el-col :span="14">
+			<!--这里插入公告-->
+			企划开始招工！具体见<a href='https://space.bilibili.com/138423860/dynamic'>动态页（点击跳转）</a>查看详情！
+
+		</el-col>
+		</el-row>
+
+	</div>
+	</el-card>
+	<br>
+
+	<el-card class="box-card">
+		<div slot="header" class="clearfix">
+			<span>游戏介绍</span>
+		</div>
+
+
+		</div>
+	</el-card>
+	<br>
+
+	<el-card class="box-card">
+		<div slot="header" class="clearfix">
+			<span>简介</span>
+		</div>
+
+		<div class="text item">
+
+			<span>PV放送</span><br>
+			<iframe src="//player.bilibili.com/player.html?aid=256799996&bvid=BV18Y411F7FJ&cid=726837663&page=1"
+				scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+		</div>
+	</el-card>
+	<br>
+
+	<el-card class="box-card">
+		<div slot="header" class="clearfix">
+			<span>联系方式</span>
+		</div>
+
+		<div class="text item">
+
+
+			<el-row>
+				<el-col :span="12">
+					站长邮箱
+				</el-col>
+				<el-col :span="12"><a style="text-decoration:none;border: 1px solid #00aaff;"
+						href="example@example.tk"><i class="el-icon-message"></i><span class="__cf_email__" data-cfemail="3f525e56537f5b4d5d5b114b54">[example@example.tk]</span></a>
+				</el-col>
+			</el-row>
+			<br>
+			<el-row>
+				<el-col :span="12">
+					QQ接待大厅
+				</el-col>
+				<el-col :span="12"><a style="text-decoration:none;border: 1px solid #00aaff;"
+						alt='点击链接加入群聊【弹丸论破LP接待大厅】'
+						href="https://jq.qq.com/?_wv=1027&k=TfUwsg3u"><i
+											class="el-icon-user"></i>793042412</a>
+				</el-col>
+			</el-row>
+			<br>
+			<el-row>
+				<el-col :span="12">
+					github站点
+				</el-col>
+				<el-col :span="12"><a style="text-decoration:none;border: 1px solid #00aaff;"
+						href="https://github.com"><i
+											class="el-icon-collection"></i>暂无</a>
+				</el-col>
+			</el-row>
+
+			<br>
+			<a rel="license"
+				href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a
+				rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。
+		</div>
+	</el-card>
+	<br>
+
+	</template>
+	</div>
+	</div>
+
+	<div class="bottom_info">
+		<span style="text-shadow: #D3DCE6;color: white;">
+				下滑以查看更多
+			</span>
+	</div>
+
+
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script type="text/javascript">
+		var data = {
+				ver_num: '0.0.0',
+				top_img_scr: 'img/top.jpg',
+				hot_img_scr: 'img/hot.jpg',
+				dialogVisible: false,
+				item: 0
+			};
+
+			var vm = new Vue({
+				el: '#vm',
+				data: data,
+				methods: {
+					handleClose(done) {
+						this.$confirm('确认关闭？')
+							.then(_ => {
+								done();
+							})
+							.catch(_ => {});
+					}
+				}
+
+			});
+	</script>
+</body>
+
+</html>

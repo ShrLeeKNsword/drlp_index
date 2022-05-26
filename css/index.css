@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "SourceHanSerifCN-ExtraLight";
+	src: url("font/思源宋体-SC-Bold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "明天圆体MRT-まるこいあすβ";
+	src: url("font/明天圆体MRT-まるこいあすβ.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.html {
+	font-family: "SourceHanSerifCN-ExtraLight";
+	font-size: 30px;
+	max-width: 1000px;
+	min-width: 700px;
+
+}
+
+.main-div {
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #8ca6c7;
+}
+
+.box-card {
+	.text {
+		font-size: 14px;
+	}
+
+	.item {
+		margin-bottom: 18px;
+	}
+
+	.clearfix:before,
+	.clearfix:after {
+		display: table;
+		content: "";
+	}
+
+	.clearfix:after {
+		clear: both
+	}
+
+	.box-card {
+		width: 480px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+		margin-left: 5px;
+	}
+}
+
+.bottom_info : {
+	bottom: 0px;
+	width: 100%;
+	background-color: #475669;
+	position: fixed;
+	text-align: center;
+}
+
+.el-carousel__item h3 {
+	color: #475669;
+	font-size: 14px;
+	opacity: 0.75;
+	line-height: 200px;
+	margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+	background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+	background-color: #d3dce6;
+}
